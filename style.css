@@ -1,0 +1,137 @@
+:root {
+  --sendi-navy: #0f1f4b;
+  --sendi-blue: #1d4ed8;
+  --sendi-sky: #eaf1ff;
+  --sendi-text: #334155;
+  --sendi-white: #ffffff;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+
+.sendi_body {
+  font-family: "Segoe UI", system-ui, -apple-system, Arial, sans-serif;
+  color: var(--sendi-text);
+  background: var(--sendi-white);
+  line-height: 1.6;
+}
+
+section { padding: 48px 8vw; }
+a { text-decoration: none; }
+
+/* ---------- HEADER ---------- */
+#sendi_header {
+  position: sticky; top: 0; z-index: 10;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 14px 8vw;
+  background: var(--sendi-white);
+  box-shadow: 0 1px 6px rgba(15, 31, 75, .08);
+}
+.sendi_logo { font-weight: 700; font-size: 1.2rem; color: var(--sendi-navy); }
+.sendi_logo i { color: var(--sendi-blue); margin-right: 4px; }
+.sendi_logo span { color: var(--sendi-blue); }
+.sendi_menu { display: flex; gap: 28px; }
+.sendi_menu_link { color: var(--sendi-navy); font-weight: 500; padding-bottom: 4px; }
+.sendi_menu_link:hover,
+.sendi_menu_link.sendi_active { color: var(--sendi-blue); border-bottom: 2px solid var(--sendi-blue); }
+.sendi_menu_link:focus-visible,
+.sendi_btn:focus-visible,
+.sendi_card_link:focus-visible { outline: 3px solid var(--sendi-blue); outline-offset: 3px; }
+
+/* ---------- HERO ---------- */
+#sendi_home {
+  display: grid; grid-template-columns: 1.1fr 1fr; align-items: center; gap: 32px;
+  background: linear-gradient(120deg, var(--sendi-sky) 0%, #f6f9ff 60%, var(--sendi-white) 100%);
+  padding-top: 64px; padding-bottom: 64px;
+}
+.sendi_hello { font-size: 1.6rem; font-weight: 600; color: var(--sendi-navy); }
+.sendi_name { font-size: clamp(2.4rem, 6vw, 3.8rem); line-height: 1.1; color: var(--sendi-blue); margin: 4px 0 10px; }
+.sendi_role { font-weight: 600; color: var(--sendi-navy); margin-bottom: 14px; }
+.sendi_intro { max-width: 46ch; margin-bottom: 24px; }
+.sendi_buttons { display: flex; gap: 14px; flex-wrap: wrap; }
+.sendi_btn { padding: 11px 22px; border-radius: 8px; font-weight: 600; display: inline-flex; gap: 8px; align-items: center; transition: background .2s, color .2s; }
+.sendi_btn_primary { background: var(--sendi-blue); color: var(--sendi-white); border: 2px solid var(--sendi-blue); }
+.sendi_btn_primary:hover { background: var(--sendi-navy); border-color: var(--sendi-navy); }
+.sendi_btn_outline { color: var(--sendi-blue); border: 2px solid var(--sendi-blue); background: var(--sendi-white); }
+.sendi_btn_outline:hover { background: var(--sendi-sky); }
+
+.sendi_hero_visual { position: relative; display: flex; justify-content: center; align-items: flex-end; min-height: 260px; }
+.sendi_laptop { width: min(420px, 100%); transform: rotate(-4deg); }
+.sendi_laptop_screen {
+  aspect-ratio: 16 / 10; background: linear-gradient(135deg, #0b1b45, #1d3a8a);
+  border: 8px solid #1f2937; border-radius: 12px 12px 0 0;
+  display: grid; place-items: center;
+}
+.sendi_laptop_screen span { font-size: clamp(2.4rem, 7vw, 4rem); font-weight: 700; color: #60a5fa; font-family: Consolas, monospace; }
+.sendi_laptop_base { height: 14px; background: #cbd5e1; border-radius: 0 0 14px 14px; width: 108%; margin-left: -4%; }
+.sendi_plant { position: absolute; right: 2%; bottom: 0; font-size: 3.4rem; color: #22a06b; }
+
+/* ---------- ABOUT ---------- */
+#sendi_about { display: grid; grid-template-columns: 1fr 240px; gap: 40px; align-items: center; }
+.sendi_title { color: var(--sendi-navy); font-size: 1.7rem; margin-bottom: 14px; position: relative; padding-bottom: 8px; }
+.sendi_title::after { content: ""; position: absolute; left: 0; bottom: 0; width: 56px; height: 3px; background: var(--sendi-blue); border-radius: 2px; }
+.sendi_about_text p { max-width: 62ch; margin-bottom: 16px; }
+.sendi_info_list { list-style: none; display: flex; flex-wrap: wrap; gap: 10px 28px; font-size: .95rem; }
+.sendi_info_list i { color: var(--sendi-blue); margin-right: 6px; }
+.sendi_photo {
+  position: relative; width: 240px; aspect-ratio: 1; border-radius: 12px; overflow: hidden;
+  background: linear-gradient(135deg, var(--sendi-blue), var(--sendi-navy));
+  display: grid; place-items: center;
+}
+.sendi_photo img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: 1; }
+.sendi_photo_fallback { font-size: 3.4rem; font-weight: 700; color: var(--sendi-white); }
+
+/* ---------- SKILLS ---------- */
+#sendi_skills { padding-top: 16px; }
+.sendi_skill_grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 14px; margin-top: 10px; }
+.sendi_skill_item {
+  display: flex; align-items: center; gap: 10px;
+  padding: 12px 16px; border: 1px solid #e2e8f0; border-radius: 10px;
+  background: var(--sendi-white); font-weight: 500; color: var(--sendi-navy);
+}
+.sendi_skill_item i { font-size: 1.5rem; }
+
+/* ---------- PROJECTS ---------- */
+#sendi_projects { padding-top: 24px; }
+.sendi_project_grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; margin-top: 10px; }
+.sendi_card { border: 1px solid #e2e8f0; border-radius: 12px; overflow: hidden; background: var(--sendi-white); display: flex; flex-direction: column; }
+.sendi_card h3 { color: var(--sendi-navy); font-size: 1rem; padding: 12px 14px 0; }
+.sendi_card p { font-size: .88rem; padding: 4px 14px 8px; flex: 1; }
+.sendi_card_link { color: var(--sendi-blue); font-weight: 600; font-size: .88rem; padding: 0 14px 14px; }
+.sendi_card_link:hover { text-decoration: underline; }
+.sendi_card_img { height: 110px; display: grid; place-items: center; font-size: 2.6rem; color: var(--sendi-white); }
+.sendi_img_a { background: linear-gradient(135deg, #2563eb, #0ea5e9); }
+.sendi_img_b { background: linear-gradient(135deg, #16a34a, #65a30d); }
+.sendi_img_c { background: linear-gradient(135deg, #7c3aed, #4f46e5); }
+.sendi_img_d { background: linear-gradient(135deg, #ea580c, #f59e0b); }
+
+/* ---------- FOOTER ---------- */
+#sendi_footer {
+  background: var(--sendi-navy); color: #dbe4ff;
+  display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between;
+  gap: 14px 32px; padding: 24px 8vw; margin-top: 24px;
+}
+.sendi_footer_brand { display: flex; flex-direction: column; }
+.sendi_footer_brand strong { color: var(--sendi-white); }
+.sendi_footer_brand small { opacity: .8; }
+.sendi_footer_info { display: flex; gap: 24px; flex-wrap: wrap; font-size: .9rem; }
+.sendi_footer_info i { margin-right: 6px; }
+.sendi_copy { width: 100%; text-align: center; font-size: .8rem; opacity: .75; border-top: 1px solid rgba(255,255,255,.15); padding-top: 12px; }
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 900px) {
+  .sendi_skill_grid { grid-template-columns: repeat(3, 1fr); }
+  .sendi_project_grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 640px) {
+  #sendi_header { flex-direction: column; gap: 8px; }
+  .sendi_menu { gap: 16px; }
+  #sendi_home, #sendi_about { grid-template-columns: 1fr; }
+  .sendi_photo { margin: 0 auto; }
+  .sendi_skill_grid { grid-template-columns: repeat(2, 1fr); }
+  .sendi_project_grid { grid-template-columns: 1fr; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  * { transition: none !important; }
+}

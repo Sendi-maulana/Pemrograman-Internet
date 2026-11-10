@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sendi Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="sendi_body">
+
+  <!-- HEADER / MENU -->
+  <header id="sendi_header">
+    <a href="#sendi_home" class="sendi_logo"><i class="fa-solid fa-code"></i> Sendi <span>Portfolio</span></a>
+    <nav class="sendi_menu">
+      <a href="#sendi_home" class="sendi_menu_link sendi_active">Home</a>
+      <a href="#sendi_about" class="sendi_menu_link">About</a>
+      <a href="#sendi_skills" class="sendi_menu_link">Skills</a>
+      <a href="#sendi_projects" class="sendi_menu_link">Projects</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section id="sendi_home">
+    <div class="sendi_hero_text">
+      <p class="sendi_hello">Hello, I'm</p>
+      <h1 class="sendi_name">Sendi Maulana</h1>
+      <p class="sendi_role">Student | Web Developer | Informatics</p>
+      <p class="sendi_intro">Welcome to my personal portfolio. I'm passionate about technology, learning, and building innovative solutions for a better future.</p>
+      <div class="sendi_buttons">
+        <a href="#sendi_about" class="sendi_btn sendi_btn_primary"><i class="fa-solid fa-user"></i> About Me</a>
+        <a href="mailto:sendi@example.com" class="sendi_btn sendi_btn_outline"><i class="fa-solid fa-envelope"></i> Contact Me</a>
+      </div>
+    </div>
+    <div class="sendi_hero_visual">
+      <div class="sendi_laptop">
+        <div class="sendi_laptop_screen"><span>&lt;/&gt;</span></div>
+        <div class="sendi_laptop_base"></div>
+      </div>
+      <div class="sendi_plant"><i class="fa-solid fa-seedling"></i></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="sendi_about">
+    <div class="sendi_about_text">
+      <h2 class="sendi_title">About Me</h2>
+      <p>I am a student in the Informatics Engineering Study Program at Universitas Perjuangan Tasikmalaya with a strong interest in web development, data science, and information technology. I enjoy learning, researching, and sharing knowledge.</p>
+      <ul class="sendi_info_list">
+        <li><i class="fa-solid fa-location-dot"></i> Tasikmalaya, Indonesia</li>
+        <li><i class="fa-solid fa-envelope"></i> sendi@example.com</li>
+        <li><i class="fa-solid fa-graduation-cap"></i> S1 Informatics</li>
+      </ul>
+    </div>
+    <div class="sendi_photo">
+      <img src="FP.jpg" alt="Foto Sendi Maulana" onerror="this.style.display='none'">
+      <span class="sendi_photo_fallback">SM</span>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="sendi_skills">
+    <h2 class="sendi_title">Skills</h2>
+    <div class="sendi_skill_grid">
+      <div class="sendi_skill_item"><i class="fa-brands fa-html5" style="color:#e44d26"></i> HTML5</div>
+      <div class="sendi_skill_item"><i class="fa-brands fa-css3-alt" style="color:#264de4"></i> CSS3</div>
+      <div class="sendi_skill_item"><i class="fa-brands fa-js" style="color:#e5b400"></i> JavaScript</div>
+      <div class="sendi_skill_item"><i class="fa-brands fa-php" style="color:#777bb3"></i> PHP</div>
+      <div class="sendi_skill_item"><i class="fa-solid fa-database" style="color:#00758f"></i> MySQL</div>
+      <div class="sendi_skill_item"><i class="fa-brands fa-laravel" style="color:#ff2d20"></i> Laravel</div>
+      <div class="sendi_skill_item"><i class="fa-brands fa-bootstrap" style="color:#7952b3"></i> Bootstrap</div>
+      <div class="sendi_skill_item"><i class="fa-brands fa-react" style="color:#00b4d8"></i> React</div>
+      <div class="sendi_skill_item"><i class="fa-brands fa-python" style="color:#3776ab"></i> Python</div>
+      <div class="sendi_skill_item"><i class="fa-solid fa-chart-simple" style="color:#f2c811"></i> Power BI</div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="sendi_projects">
+    <h2 class="sendi_title">My Projects</h2>
+    <div class="sendi_project_grid">
+      <article class="sendi_card">
+        <div class="sendi_card_img sendi_img_a"><i class="fa-solid fa-diagram-project"></i></div>
+        <h3>FSA for NPC AI</h3>
+        <p>Finite State Automata report on NPC behavior in games.</p>
+        <a href="#" class="sendi_card_link">View Project &rarr;</a>
+      </article>
+      <article class="sendi_card">
+        <div class="sendi_card_img sendi_img_b"><i class="fa-solid fa-square-root-variable"></i></div>
+        <h3>Numerical Methods</h3>
+        <p>Group project on numerical computation methods.</p>
+        <a href="#" class="sendi_card_link">View Project &rarr;</a>
+      </article>
+      <article class="sendi_card">
+        <div class="sendi_card_img sendi_img_c"><i class="fa-solid fa-laptop-code"></i></div>
+        <h3>Portfolio Website</h3>
+        <p>Personal portfolio built with HTML and CSS.</p>
+        <a href="#" class="sendi_card_link">View Project &rarr;</a>
+      </article>
+      <article class="sendi_card">
+        <div class="sendi_card_img sendi_img_d"><i class="fa-solid fa-store"></i></div>
+        <h3>E-Commerce</h3>
+        <p>Online store platform (coming soon).</p>
+        <a href="#" class="sendi_card_link">View Project &rarr;</a>
+      </article>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="sendi_footer">
+    <div class="sendi_footer_brand">
+      <strong><i class="fa-solid fa-code"></i> Sendi Portfolio</strong>
+      <small>Build, Learn, and Share Knowledge</small>
+    </div>
+    <div class="sendi_footer_info">
+      <span><i class="fa-solid fa-envelope"></i> sendi@example.com</span>
+      <span><i class="fa-solid fa-location-dot"></i> Tasikmalaya, Indonesia</span>
+    </div>
+    <p class="sendi_copy">&copy; 2026 Sendi Portfolio. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
